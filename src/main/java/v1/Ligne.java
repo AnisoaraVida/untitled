@@ -5,10 +5,16 @@ public class Ligne implements PrePostVisitable, Visitable{
     private int sum;
 
     public Ligne(String name, int sum){
+        this.name=name;
+        this.sum=sum;
 
     }
     public Ligne(String name){
+        this.name=name;
+    }
 
+    public String getName(){
+        return this.name;
     }
 
     @Override
